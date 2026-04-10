@@ -5,14 +5,21 @@
 2) Установите дистрибутив Python с conda. (У меня это Miniconda).
 3) Открыть терминал на Linux/macOS; на Windows с Anaconda — открыть Anaconda Prompt
 4) Ввести следующие команды по очереди, нажимая Enter после каждой:
+
 conda create -n pdbqt python=3.11 -y
+
 conda activate pdbqt
+
 conda install -c conda-forge numpy scipy rdkit -y
+
 pip install meeko gemmi
+
 5) Для проверки установки всего нужного, введите следующую команду:
+
 python -c "from rdkit import Chem; import meeko; print('OK')"
 
 После запуска всех нужных команд перейдем к следующим действиям:
+
 6) В терминале нужно активировать окружение (вставить команду):
 conda activate pdbqt
 7) Перейти в папку со скриптом:
